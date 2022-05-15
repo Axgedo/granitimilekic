@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moj Website</title>
+    <!-- Povezivanje sa sa CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Početak Navbar Sekcije -->
+    <nav class="navbar">
+        <h1 class="logo">GRANITI MILEKIĆ</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Slabs</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a href="#"></a>Contact</li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn" >
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>GRANITI MILEKIĆ</h2>
+            <div class="line"></div>
+            <h1>Prirodna lepota kamena</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+<!-- Početak Slabs Sekcije -->
+<section class="slabs">
+    <div class="title">
+        <h1>Slabs Collection</h1>
+        <div class="line"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="./img/africa.jpg" alt="">
+            <h4>Africa Red</h4>
+            <p>Africa Red je crveni granit i porekleom iz Afrike</p>
+    
+    </div>    
+        <div class="col">
+            <img src="./img/bengalblack.jpg" alt="">
+            <h4>Bengal Black</h4>
+            <p>Bengal Black granit je crne boje i poreklom iz Indije</p>
+
+    </div>
+        <div class="col">
+            <img src="./img/emeraldpearl.jpg" alt="">
+            <h4>Labrador Emerald Pearl</h4>
+            <p>Emerald Pearl granit je emerald zelene boje i poreklom iz Norveške</p>
+    
+    </div>
+        <div class="col">
+            <img src="./img/galaxy.jpg" alt="">
+            <h4>Black Galaxy</h4>
+            <p>Black Galaxy granit je crne boje sa zlatnim fragmentima i poreklom iz Indije</p>
+    
+    </div>
+    </div>
+</section>
+<!-- Početak Explore Sekcije -->
+<section class="explore">
+    <div class="explore-content">
+        <h1>UPOZNAJTE GRANIT S NAMA</h1>
+        <div class="line"></div>
+        <p>Granit je grubo zrnasta intruzivna magmatska stena sastavljena uglavnom od kvarca, alkalnog feldspata i plagioklasa. Formira se od magme sa visokim sadržajem silicijum dioksida i oksida alkalnih metala koji se polako hladi i učvršćuje pod zemljom.</p>
+        <a href="#" class="ctn">Learn More</a>
+    </div>
+</section>
+<!-- Početak Slab Sekcije -->
+<section class="slab">
+    <div class="row">
+        <div class="col content-col">
+            <h1>NOVA KOLEKCIJA</h1>
+            <div class="line"></div>
+            <p>Ovde možete videti najlepše, najređe i najluksuznije vrste granita sveta!</p>
+        </div>
+        <div class="col image-col">
+            <div class="image-gallery">
+                <img src="./img/bluebahia.jpg" alt="">
+                <img src="./img/pradagold.jpg" alt="">
+                <img src="./img/vangogh.jpg" alt="">
+                <img src="./services/ORINOCO.jpg" alt="">  
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Početak Footer Sekcije -->
+<section class="footer">
+    <p>Žarka Zrenjanina 1, Karavukovo, Srbija | Telefon: 063/575-312 | Email: okosolicni@gmail.com</p>
+    <p>Copyright © 2022 Graniti Milekić</p>
+</section>
+
+</section>
+    <script>
+        const menuBtn=document.querySelector('.menu-btn')
+        const navlinks=document.querySelector('.nav-links')
+        menuBtn.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+</body>
+</html>
